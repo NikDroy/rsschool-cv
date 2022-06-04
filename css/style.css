@@ -1,18 +1,23 @@
 * {
     box-sizing: border-box;
-    font-size: 24px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: 100;
-    margin: 0 40px;
-    padding: 0;
 }
 
 body {
     display: flex;
     justify-content: space-between;
     flex-direction:column;
-    min-height: 100vh
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header {
@@ -23,6 +28,16 @@ body {
     border: 1px solid red;
     height: 400px;
 }
-.footer {
-    max-width: 20%;
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+
+.footer_elem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
