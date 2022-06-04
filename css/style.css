@@ -1,4 +1,24 @@
 * {
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 100;
     margin: 0;
-    font-size: 14px;
+}
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-width: 960px;
+}
+
+.main_test {
+    background-color: aqua;
+    height: 400px;
+    width: 960px;
+}
+.footer {
+    
+    max-width: 10%;
 }
