@@ -12,70 +12,133 @@
     <title>CV - Nikita Gulyas</title>
 </head>
     <body>
-        <header class="header">
-            <div class="containter">
-                <nav class="nav">
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="#contacts" class="nav_link">Contacts</a></li>
-                        <li class="nav_item"><a href="#aboutme" class="nav_link">Somth about me</a></li>
-                        <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
-                        <li class="nav_item"><a href="#code_example" class="nav_link">Code Example</a></li>
-                        <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
-                        <li class="nav_item"><a href="#experience" class="nav_link">Work Experience</a></li>
-                        <li class="nav_item"><a href="#lang" class="nav_link">Language</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <div class="main_container">
+            <header class="header">
+                <div class="container">
+                    <nav class="nav">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="#contacts" class="nav_link">Contacts</a></li>
+                            <li class="nav_item"><a href="#summary" class="nav_link">Somth about me</a></li>
+                            <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                            <li class="nav_item"><a href="#code_example" class="nav_link">Code Example</a></li>
+                            <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
+                            <li class="nav_item"><a href="#experience" class="nav_link">Work Experience</a></li>
+                            <li class="nav_item"><a href="#lang" class="nav_link">Language</a></li>
+                            <li class="nav_item"><a href="#project" class="nav_link">Project</a></li>
+                        </ul>
+                    </nav>
+                
+                    <section class="section" id="profile">
+                        <div>
+                            <h1>Nikita Gulyas</h1>
+                            <h2>Junior(Trainee) Frontend Web-Developer</h2>
+                        </div>
+                        
+                    </section>
+                </div>
+            </header>
             <main class="main">
-                <div class="containter container_title">
-                 </div>
-            
-                 <!-- this is sidebar part -->
-                 <sidebar class="sidebar">Sidebar
-                     <div>
-                         <h2>Contacts</h2>
-                         <div>email</div>
-                         <div>github</div>
-                         <div>city</div>
-                         <div>VK</div>
-                     </div>
-                     <div>
-                         <h2>hard skills</h2>
-                         <div>sm</div>
-                         <div>smth</div>
-                         <div>smth</div>
-                         <div>smth</div>
-                         <div>smth</div>
-                     </div>
-                     <div>
-                         <h2>Soft skills</h2>
-                        <div>smth</div>
-                        <div>smth</div>
-                        <div>smth</div>
-                        <div>smth</div>
-                     </div>
-                     <div>
-                         <h2>Language</h2>
-                         <div>Native Russian</div>
-                         <div>English: A2-Pre-Intermediant</div>
-                     </div>
-                 </sidebar>
-            
-            
-            
-            
-                </main>
+                <div class="container main-container">
+                    <!-- this is sidebar part -->
 
-            <footer class="footer">
-                <div class="containter">
-                    <div class="footer_elem">
-                    <a href="https://github.com/NikDroy">GitHub</a>                
-                    <span>2022</span>
-                    <a href="https://rs.school/js/"><img src="assets/icon/rs_school_js.svg" alt="logo_rsschool" width="100px" height="50px"></a>
+                        <aside class="sidebar">
+                            <img src="assets/img/Me.jpg" alt="MyPhoto" class="photo">
+                            <section class="section" id="contacts">
+                                <h3>Contacts</h3>
+                                    <ul>
+                                        <li><a href="">Email</a></li>
+                                        <li><a href="">github</a></li>
+                                        <li><a href="">city</a></li>
+                                        <li><a href="">VK</a></li>
+                                    </ul>
+
+                            <section class="section" id="skills">
+                                <h3>hard skills</h3>
+                                    <div>sm</div>
+                                    <div>smth</div>
+                                    <div>smth</div>
+                                    <div>smth</div>
+                                    <div>smth</div>
+                                <h3>Soft skills</h3>
+                                    <div>smth</div>
+                                    <div>smth</div>
+                                    <div>smth</div>
+                                    <div>smth</div>
+                            </section>
+                            <section class="section" id="language">
+                                <h3>Language</h3>
+                                <div>Native Russian</div>
+                                <div>English: A2-Pre-Intermediant</div>
+                            </section>
+                        </aside>
+
+                    <!-- Основная часть -->
+                    <div class="right_column">
+                        <section class="section" id="summary">
+                            <h3>About Me</h3>
+                            <p>I started learning the web 3 times in a row. But now i'm joined to RS-School. 
+                                And truly believe that i can successfully complete course.I started learning the web 3 times in a row. But now i'm joined to RS-School. 
+                                And truly believe that i can successfully complete course.</p>
+                        </section>
+                        <section class="section" id="experience">
+                            <h3>Work Experience</h3>
+                            <ul class="experience_list">
+                            <li class="experience_item">Ecomomist in medical company</li>
+                            <li class="experience_item">Cook</li>
+                            <li class="experience_item">Tax Inspector (_until now_)</li>
+                            </ul>
+                        </section>
+                        <section class="section" id="education">
+                            <h3>Education</h3>
+                            <p>- Bachelor, Pacific National University
+                                + Faculty of Economics and Law</p>
+                        </section>
+                        <section class="section" id="code">
+                            <h3>Code Example</h3>
+                            <pre>
+                                <code>
+                                    let browser = prompt ('Name browser?');
+                                        switch (browser) {
+                                            case 'Edge':
+                                                alert( "You've got the Edge!" );
+                                                break;
+                                    
+                                            case 'Chrome':
+                                            case 'Firefox':
+                                            case 'Safari':
+                                            case 'Opera':
+                                                alert( 'Okay we support these browsers too' );
+                                                break;
+                                        default:
+                                        alert( 'We hope that this page looks ok!' );
+                                    };
+                                </code>
+                            </pre>
+                        </section>
+                        <section class="section" id="project">
+                            <h3>Project</h3>
+                            <div>
+                                My prjocts
+                            </div>
+                        </section>
                     </div>
                 </div>
+            </main>
+                    
+
+
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer_elem">
+                    <a href="https://github.com/NikDroy">GitHub</a>                
+                    <span> Made by Nikita Gulyas 2022</span>
+                    <a href="https://rs.school/js/"><img src="assets/icon/rs_school_js.svg" alt="logo_rsschool" width="100px" height="50px"></a>
+                    </div>
+                    
+                </div>
             </footer>
+            </div>
     </body>
 
 </html>
