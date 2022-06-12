@@ -11,35 +11,40 @@ body {
     min-height: 100vh;
     padding: 0;
     margin: 0;
-    background-color: antiquewhite;
 }
 .container {
     max-width: 1080px;
     margin: 0 auto;
 }
-.main {
-    border: 1px solid red;
-}
+
 .main-container {
     display: flex;
+    flex-wrap: wrap;
 }
 .section {
-    width: 50%;
+    width: 90%;
   }
-
-.sidebar {
-    background-color: rgba(0, 255, 255, 0.099);
-    width: 35%;
-    padding: 10px;
+.section a {
+    text-decoration: none;
+    color: #707871;
+    transition: color 0.5s;
+}
+.section a:hover {
+    color:red;
+}
+.section li {
+    list-style: none;
 }
 .right_column {
-    background-color: rgba(137, 43, 226, 0.209);
-    width: 65%;
-    margin-left: 15px;
-    padding: 10px;
+    background-color: rgba(84, 16, 130, 0.152);
+    width: 70%;
+    padding: 20px;
+    color:azure;
 }
+/* Style for hav-header */
 .nav {
     height: 50px;
+    background-color:violet;
 }
 .nav_list {
     display: flex;
@@ -52,7 +57,7 @@ body {
     font-size: 16px;
 }
 .nav_link {
-    padding: 0 10px;
+    padding: 0 5px;
     line-height: 30px;
     text-decoration: none;
     color: rgb(144, 8, 94);
@@ -64,21 +69,114 @@ body {
     transition: color 0.35s;
     text-decoration: underline;
 }
+/* style for sidebar block */
 
-.photo {
-    width: 85%;
-    display: block;
-    margin: 0 auto;
+.sidebar {
+    background-color: rgba(84, 16, 130, 0.152);
+    width: 30%;
+    padding-left: 15px;
+    border-right: 5px ridge rgb(66, 64, 64);
 }
-  
-  
-  
-  
-  
-  
-  
-  
+.photo {
+    width: 95%;
+    border-radius: 15%;
+    margin-top: 10px;
+}
 
+/* style for section contacts */
+.sidebar h3 {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    font-weight: 300;
+    text-transform: uppercase;    
+    text-align: center;
+    letter-spacing: 3px; 
+    border-radius: 25px;
+    color:aliceblue;
+    background-color: #505050;
+}
+.sidebar {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.section_contact li img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.section_contact a {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    
+}
+
+/* style for section SKILLS */
+
+.skills-list {
+    margin-left: 5px;
+}
+.skills-list dt {
+    text-align: start;
+}
+.level {
+    margin: 4px 0 5px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.152);
+    border: 1px solid #712073;
+    border-radius: 8px;
+  }
+.html, .css, .git, .js, .scss, .bs {
+    margin: 1px;
+    height: 20px;
+    padding-right: 15px;
+    text-align: right;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: rgb(174, 210, 212);
+    border-radius: 6px;
+    color: #000;
+
+  }
+.html {
+    width: 75%;
+}
+.css {
+    width: 65%; 
+}
+.git {
+    width: 50%;
+}
+.js {
+    width: 20%; 
+}
+.scss {
+    width: 23%;
+}
+.bs {
+    width: 15%; 
+}
+
+.skills_soft {
+    text-transform: capitalize;
+    line-height: 30px;
+}
+
+/* style for language block */
+.section_lang div{
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.section_lang {
+    margin-bottom: 10px;
+}
+/* style for footer */
+.footer_elem{
+    background-color:cadetblue;
+}
  .footer_elem {
     display: flex;
     justify-content: space-between;
