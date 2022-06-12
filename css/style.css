@@ -22,7 +22,7 @@ body {
     flex-wrap: wrap;
 }
 .section {
-    width: 90%;
+    width: 100%;
   }
 .section a {
     text-decoration: none;
@@ -35,36 +35,34 @@ body {
 .section li {
     list-style: none;
 }
-.right_column {
-    background-color: rgba(84, 16, 130, 0.152);
-    width: 70%;
-    padding: 20px;
-    color:azure;
-}
+
 /* Style for hav-header */
 .nav {
     height: 50px;
-    background-color:violet;
+    background-color:rgba(186, 158, 173, 0.312);
 }
 .nav_list {
+    
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+    padding-top: 10px;
+    padding-right: 15px;
 }
 .nav_item {
     font-style: italic;
-    font-size: 16px;
+    font-size: 18px;
 }
 .nav_link {
     padding: 0 5px;
     line-height: 30px;
     text-decoration: none;
-    color: rgb(144, 8, 94);
+    color: rgb(96, 93, 95);
 }
 .nav_link:hover {
     transition: .3s;
-    color: #3b039c;
+    color: #a19ea8b7;
     text-decoration: none;  
     transition: color 0.35s;
     text-decoration: underline;
@@ -72,11 +70,22 @@ body {
 /* style for sidebar block */
 
 .sidebar {
-    background-color: rgba(84, 16, 130, 0.152);
+    background-color: rgba(203, 188, 201, 0.322);
     width: 30%;
     padding-left: 15px;
-    border-right: 5px ridge rgb(66, 64, 64);
+    border-right: 3px ridge rgba(66, 64, 64, 0.214);
 }
+/* .sidebar:after {
+    content: "";
+    position: absolute;
+    bottom: -525px;
+    left: 50%;
+    margin-left: -218px;
+    width: 3px;
+    height: 1170px;
+    background-color: rgba(66, 64, 64, 0.174);
+} */
+
 .photo {
     width: 95%;
     border-radius: 15%;
@@ -84,12 +93,14 @@ body {
 }
 
 /* style for section contacts */
-.sidebar h3 {
-    width: 200px;
+.sidebar .section h3 {
+    
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 35px;
     margin-bottom: 15px;
-    padding: 10px 10px;
+    padding: 5px 10px;
+    width: 165px;
+    font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;    
     text-align: center;
@@ -118,6 +129,7 @@ body {
 
 .skills-list {
     margin-left: 5px;
+    margin-right: 15px;
 }
 .skills-list dt {
     text-align: start;
@@ -173,12 +185,83 @@ body {
 .section_lang {
     margin-bottom: 10px;
 }
-/* style for footer */
-.footer_elem{
-    background-color:cadetblue;
+/* style for right columns/main part */
+.right_column {
+    background-color: rgba(211, 179, 196, 0.312);
+    width: 70%;
+    padding: 20px;
+    color:rgb(102, 104, 104);
+    font-size: 18px;
+    font-weight: 100;
 }
+
+.section_profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    align-items: center;
+    border-bottom: 2px solid rgb(66, 64, 64);;
+}
+.section_profile h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 44px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    
+}
+.section_profile h2 {
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 55px;
+}
+.section h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 500;
+}
+.section_summary p {
+line-height: 30px;
+padding-left: 20px;
+}
+.section_exp {
+    padding-left: 20px;
+    margin-top: 25px; 
+}
+.exp_item {
+    margin-bottom: 20px;
+}
+
+.section_education {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.section_education div {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+
+/* style for footer */
+
  .footer_elem {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    font-size: 18px;
+    height: 70px;
+    background-color:rgba(186, 158, 173, 0.312);
+    padding: 0 150px;
+}
+.footer_elem div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_elem div span {
+    font-weight: 300;
 }
