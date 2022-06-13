@@ -1,2 +1,2 @@
-# rsschool-cv
-pre-school #stage0
+https://nikdroy.github.io/rsschool-cv/cv
+https://nikdroy.github.io/rsschool-cv/
